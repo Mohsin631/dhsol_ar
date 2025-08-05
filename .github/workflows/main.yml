@@ -1,8 +1,9 @@
-name: Deploy to VPS
+name: Deploy Arabic Site (dhsol_ar)
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -15,14 +16,15 @@ jobs:
     - name: Setup SSH
       uses: webfactory/ssh-agent@v0.7.0
       with:
-        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+        ssh-private-key: ${{ secrets.VPS_SSH_KEY }}
 
-    - name: Deploy to VPS
+    - name: Deploy Arabic site
       run: |
-        ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
+        ssh -o StrictHostKeyChecking=no root@92.113.27.23 << 'EOF'
           cd /var/www/mena.dhsol.net
           git pull origin main
           npm install
           npm run build
-          pm2 reload mena
+          pm2 restart mena || pm2 start npm --name mena -- start
+          pm2 save
         EOF
