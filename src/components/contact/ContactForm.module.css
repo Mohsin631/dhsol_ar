@@ -1,0 +1,106 @@
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 12px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #1a202c;
+  }
+  
+  .input,
+  .textarea {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 1rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.2s ease-in-out;
+  }
+  
+  .textarea {
+    resize: vertical;
+  }
+  
+  .input:focus,
+  .textarea:focus,
+  .formSelect:focus {
+    border-color: #3533cd;
+    outline: none;
+  }
+  
+  .formSelect {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 1rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .button {
+    background-color: #3533cd;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #3533cd;
+  }
+  
+  .checkboxLabel {
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+  
+  .checkboxLabel a {
+    margin-left: 0.3rem;
+    color: #3533cd;
+    text-decoration: underline;
+  }
+  
+  .checkbox {
+    margin-right: 0.5rem;
+  }
+  
+  .error {
+    color: #e53e3e;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  
+  .thankyou {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .checkmark {
+    font-size: 3rem;
+    color: #3533cd;
+    margin-bottom: 1rem;
+  }
+
+  .checkboxLabel {
+  display: flex;
+  flex-direction: row-reverse; /* moves input to the end (left) */
+  align-items: center;
+  gap: 0.5rem; /* optional spacing */
+}
+
+  

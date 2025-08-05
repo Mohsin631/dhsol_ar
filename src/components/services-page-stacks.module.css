@@ -1,0 +1,63 @@
+.section {
+  padding: 4rem 2rem;
+  background-color: #ffffff; /* White background */
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #000000; /* Black heading */
+}
+
+.categoryBlock {
+  margin-bottom: 3rem;
+}
+
+.categoryTitle {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: #000000; /* Black category title */
+}
+
+.stackGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.stackItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f1f1f1; /* Light gray box */
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-size: 0.95rem;
+  color: #000000; /* Black text by default */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  width: 110px;
+  text-align: center;
+  cursor: pointer;
+  /* Set a maximum width and make sure the items wrap */
+  max-width: 45%; /* Adjust as needed for two columns */
+}
+
+.stackItem:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(255, 49, 49, 0.4);
+  color: #3533cd; /* Red text on hover */
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #000000; /* Black icons by default */
+  transition: color 0.3s ease;
+}
+
+.stackItem:hover .icon {
+  color: #3533cd; /* Red hover effect for icons */
+}

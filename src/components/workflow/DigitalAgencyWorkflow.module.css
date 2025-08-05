@@ -1,0 +1,68 @@
+/* src/components/workflow/DigitalAgencyWorkflow.module.css */
+
+.workflowSection {
+    background: #0f0f0f;
+    color: #fff;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  
+  .sectionTitle {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .workflowCard {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 2rem;
+    color: #fff;
+    height: 100%;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 0 0 transparent;
+    text-align: left;
+  }
+  
+  .workflowCard:hover {
+    border-color: #3533cd;
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255, 49, 49, 0.4);
+  }
+  
+  .step {
+    color: #3533cd;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .number {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: #fff;
+  }
+  
+  .paragraph {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  /* Add animation to fade_left */
+  .fade_left {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  
