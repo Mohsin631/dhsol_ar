@@ -21,5 +21,7 @@ jobs:
           sshpass -p "${{ secrets.VPS_PASSWORD }}" ssh -o StrictHostKeyChecking=no root@${{ secrets.VPS_HOST }} << 'EOF'
             cd /var/www/mena.dhsol.net
             git pull origin main
+            npm install
+            npm run build
             pm2 restart mena
           EOF
